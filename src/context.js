@@ -8,7 +8,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [cocktails, setCocktails] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("d");
+  const [searchTerm, setSearchTerm] = useState("d");  //shows cocktails with letter d in it
 
   const fetchCocktail = useCallback(async () => {
     setLoading(true);
